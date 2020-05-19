@@ -1,7 +1,7 @@
 {
   "name": "gj-rise-cli",
   "description": "Generate Appsync Apps",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "Gary Jennings @dodgeblaster",
   "bin": {
     "rise": "./bin/run"
@@ -11,7 +11,7 @@
     "@oclif/command": "^1.6.1",
     "@oclif/config": "^1.15.1",
     "@oclif/plugin-help": "^3.0.1",
-    "gj-service-appsync": "^1.0.1"
+    "gj-service-appsync": "^1.0.2"
   },
   "devDependencies": {
     "@oclif/dev-cli": "^1.22.2",
@@ -44,7 +44,7 @@
   "repository": "dodgeblaster/gj-rise",
   "scripts": {
     "postpack": "rm -f oclif.manifest.json",
-    "posttest": "echo NO ESLINT",
+    "posttest": "eslint .",
     "prepack": "oclif-dev manifest && oclif-dev readme",
     "test": "echo NO TESTS",
     "version": "oclif-dev readme && git add README.md"
